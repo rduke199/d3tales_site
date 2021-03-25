@@ -2,6 +2,10 @@ import os
 import glob
 from docx import Document
 from pathlib import Path
+#import importlib
+#import sys
+#importlib.reload(sys)
+#sys.setdefaultencoding('utf8')
 
 base_path = Path(__file__).resolve().parent.parent
 static_path = os.path.join(base_path, 'website', 'static', 'website')
@@ -13,7 +17,7 @@ Extract text from text files in text/ directory.
 
 def get_text(file_name):
     text_path = os.path.join(static_path, 'text', file_name)
-    with open(text_path, 'r') as f:
+    with open(text_path, 'r', encoding='utf-8') as f:
         text = f.read()
     return text
 
