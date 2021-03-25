@@ -31,7 +31,7 @@ def get_member_image(name, category):
 
 def get_member_university(name, category):
     file_path = os.path.join(static_path, 'profiles', category, name, 'university.txt')
-    with open(file_path, "r") as f:
+    with open(file_path, "r", encoding='utf-8') as f:
         description = f.read()
     return description
 
