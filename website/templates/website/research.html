@@ -1,0 +1,74 @@
+{% extends "website/base.html" %}
+{% block content %}
+{% load static %}
+
+    <section class="content4 cid-sqxuceGwi5" id="content4-2t">
+
+
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="title col-md-12 col-lg-10">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2">
+                        <strong>Our Research</strong></h3>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tabs content18 cid-sqatuwvX5I" id="tabs1-1p">
+
+
+
+
+        <div class="container">
+
+            <div class="row justify-content-center mt-4">
+                <div class="col-12 col-md-11">
+                    <ul class="nav nav-tabs mb-4" role="tablist">
+                        <li class="nav-item first mbr-fonts-style"><a class="nav-link mbr-fonts-style show active display-7" role="tab" data-toggle="tab" href="#tabs1-1p_tab0" aria-selected="true"><strong>Data Aggregation, Creation, Curation</strong><br></a></li>
+                        <li class="nav-item"><a class="nav-link mbr-fonts-style active display-7" role="tab" data-toggle="tab" href="#tabs1-1p_tab1" aria-selected="true"><strong>Redox-Active Molecules for LES</strong><br></a></li>
+                        <li class="nav-item"><a class="nav-link mbr-fonts-style active display-7" role="tab" data-toggle="tab" href="#tabs1-1p_tab2" aria-selected="true"><strong>Electrolytes for LES</strong><br></a></li>
+                        <li class="nav-item"><a class="nav-link mbr-fonts-style active display-7" role="tab" data-toggle="tab" href="#tabs1-1p_tab3" aria-selected="true"><strong>Data-Driven Discovery and Design</strong></a></li>
+
+
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab1" class="tab-pane in active" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="mbr-text mbr-fonts-style display-7">{{ data_aggregation }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab2" class="tab-pane" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="mbr-text mbr-fonts-style display-7">{{ molecules }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab3" class="tab-pane" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="mbr-text mbr-fonts-style display-7">{{ electrolytes }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab4" class="tab-pane" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="mbr-text mbr-fonts-style display-7">d{{ data_driven_discovery }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
