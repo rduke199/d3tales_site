@@ -26,7 +26,7 @@ SECRET_KEY = '#88p-4*@iz)v*j5fj6dy-yyp@qzt*ie)mr1hx2e802-+-82a+y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['d3tales.as.uky.edu']
+ALLOWED_HOSTS = []
 
 
 # Application definition
