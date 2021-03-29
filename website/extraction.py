@@ -7,7 +7,7 @@ base_path = Path(__file__).resolve().parent.parent
 static_path = os.path.join(base_path, 'website', 'static', 'website')
 
 """
-Extract text from text files in text/ directory. 
+Extract text from text files in text/ directory.
 """
 
 
@@ -38,14 +38,14 @@ def get_member_university(name, category):
 
 def get_member_about(name, category):
     file_path = os.path.join(static_path, 'profiles', category, name, 'about.txt')
-    with open(file_path, "r") as f:
+    with open(file_path, "r", encoding='utf-8') as f:
         description = f.read()
     return description
 
 
 def get_group_website(name, category):
     file_path = os.path.join(static_path, 'profiles', category, name, 'group_website.txt')
-    with open(file_path, "r") as f:
+    with open(file_path, "r", encoding='utf-8') as f:
         description = f.read()
     return description
 
@@ -56,7 +56,6 @@ def get_members(category):
     members_data = []
     for member in glob.glob("*"):
         try:
-            print(member)
             info = {"name": member,
                     "about": get_member_about(member, category),
                     "image": get_member_image(member, category),
@@ -65,15 +64,17 @@ def get_members(category):
             members_data.append(info)
             if category == "PIs_SeniorPersonnel":
                 info["group_website"] = get_group_website(member, category)
+                print(member)
+                return members_data
             else:
-                pass
-            return members_data
+                print(member)
+                return members_data
         except:
             return None
 
 
 """
-Extract publication info from publication=/ directory 
+Extract publication info from publication=/ directory
 """
 
 
@@ -93,3 +94,4 @@ def journal_articles():
         articles.append(d)
 
     return articles
+

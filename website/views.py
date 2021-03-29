@@ -31,6 +31,7 @@ def personnel(request):
            "Undergraduate Students": get_members("Undergraduates")
         }
     }
+    print(context)
     return render(request, 'website/personnel.html', context)
 
 
