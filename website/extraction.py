@@ -2,10 +2,6 @@ import os
 import glob
 from docx import Document
 from pathlib import Path
-#import importlib
-#import sys
-#importlib.reload(sys)
-#sys.setdefaultencoding('utf8')
 
 base_path = Path(__file__).resolve().parent.parent
 static_path = os.path.join(base_path, 'website', 'static', 'website')
