@@ -1,0 +1,1 @@
+Subtle variations in molecular structure can have a strong impact on solvation behavior relevant to performance characteristics in LES materials. In this materials development objective, D3TaLES will create novel LES materials by synthesizing redox-active molecules with distinctive functional handles and characterizing their properties in solutions of varied compositions. 
