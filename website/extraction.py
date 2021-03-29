@@ -65,12 +65,11 @@ def get_members(category):
             if category == "PIs_SeniorPersonnel":
                 info["group_website"] = get_group_website(member, category)
                 print(member)
-                return members_data
             else:
                 print(member)
-                return members_data
         except:
-            return None
+            pass
+    return members_data
 
 
 """
