@@ -66,36 +66,35 @@
         </section>
 
         <section class="team2 cid-sqa9NsrreG" xmlns="http://www.w3.org/1999/html" id="team2-z">
-            {% for scholar in info %}
-                <div>
-                    <div class="card">
-                        <div class="card-wrapper">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-md-3">
-                                    <div class="image-wrapper">
-                                        <img src="{{ scholar.image }}" alt="Mobirise">
-                                    </div>
+            <div>
+                {% for scholar in info %}
+                <div class="card">
+                    <div class="card-wrapper">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-3">
+                                <div class="image-wrapper">
+                                    <img src="{{ scholar.image }}" alt="Mobirise">
                                 </div>
-                                <div class="col-12 col-md">
-                                    <div class="card-box">
-                                        <h5 class="card-title mbr-fonts-style m-0 display-5">
-                                            <strong>{{ scholar.name }}</strong>
-                                        </h5>
-                                        <h6 class="mbr-fonts-style mb-3 display-4">
-                                            <strong>{{ scholar.university }}</strong>
-                                        </h6>
-                                        <p class="mbr-text mbr-fonts-style display-7">
-                                            {{ scholar.about }}
-                                        </p>
+                            </div>
+                            <div class="col-12 col-md">
+                                <div class="card-box">
+                                    <h5 class="card-title mbr-fonts-style m-0 display-5">
+                                        <strong>{{ scholar.name }}</strong>
+                                    </h5>
+                                    <h6 class="mbr-fonts-style mb-3 display-4">
+                                        <strong>{{ scholar.university }}</strong>
+                                    </h6>
+                                    <p class="mbr-text mbr-fonts-style display-7">
+                                        {{ scholar.about }}
+                                    </p>
 
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-            {% endfor %}
+                {% endfor %}
+            </div>
         </section>
     {% endfor %}
 
