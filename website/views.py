@@ -26,9 +26,10 @@ def personnel(request):
         "title": "Personnel",
         "pis": get_members("PIs_SeniorPersonnel"),
         "members": {
-           "Postdoctoral Students": get_members("Postdocs"),
-           "Graduate Students": get_members("Graduates"),
-           "Undergraduate Students": get_members("Undergraduates")
+            "Postdoctoral Students": get_members("Postdocs"),
+            "Graduate Students": get_members("Graduates"),
+            # "Undergraduate Students": get_members("Undergraduates"),
+            "Evaluation Team": get_members("EvaluationTeam")
         }
     }
     return render(request, 'website/personnel.html', context)
